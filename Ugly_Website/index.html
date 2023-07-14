@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Comic+Neue">
+    <title>PIZZA PALACE</title>
+</head>
+<body id="index">
+    <div class="pizza-background"></div>
+    <header>
+        <h1 class="rainbow-color">
+            <span class="tilt-left">Pizza</span>
+            <span class="tilt-right">Palace</span>
+        </h1>
+        <img src="img/pizza-palace.jpg" alt="Pizza Palace Front Doors" class="rounded" style="height: 650px;">
+        <h2 style="color: aqua;" class="spin-3d">Have Your Next Party Here!</h2>
+    </header>
+    <main>
+        <div style="height: 5rem;">
+            <p style="text-align: left;">Welcome to PIZZA PALACE! Home of the crowd-pleasing <span class="pop">Pfestival Pizza&trade;!</span></p>
+            <p>Come on down for a lunch or dinner experience full of thrills and covered with toppings!</p>
+        </div>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                    <p>Enjoy your meal in the grand PIZZA HALL! Play before and after with fun activities in the <a href="activity.html">AMUSEMENT ARCADE!</a> Take a break from the party in the <a href="relax.html">RELAXATION ROOM!</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td></td><td>
+                    <p>Keep your eyes peeled for special appearances by the <span id="prince-link">PIZZA PRINCE!</span></p>
+                </td>
+            </tr>
+        </table>
+        <p><a href="menu.html">MENU</a></p>
+        <img src="img/pizza1.png" class="spinny" style="height: 400px;">
+    </main>
+    <footer>
+        <cite>Clip art images from <a href="https://clipartix.com">Clipartix</a>. AI Images created with <a href="https://nightcafe.studio">NightCafe</a>.</cite>
+    </footer>
+    <div id="pizza-prince">
+        <img src="img/pizza-prince.png" alt="The Pizza Prince">
+    </div>
+    <div class="amogus">&#3486;</div>
+</body>
+<script>
+    document.getElementById('prince-link').addEventListener('click', function() {
+        document.getElementById('pizza-prince').classList.add('active');
+    });
+    document.getElementById('pizza-prince').addEventListener('click', function() {
+        document.getElementById('pizza-prince').classList.remove('active');
+    });
+</script>
+</html>

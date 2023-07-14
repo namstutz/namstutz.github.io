@@ -1,0 +1,230 @@
+#index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Comic Neue', Impact, sans-serif;
+    background-color: orange;
+    cursor: wait;
+}
+
+#index h1 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+#index p {
+    background-color: white;
+}
+
+#activity {
+    background-image: url("img/under-construction.jpg");
+}
+
+.rainbow-color {
+    animation: rainbowChange 2s linear infinite;
+}
+
+@keyframes rainbowChange {
+    0% {
+        color: red;
+    }
+    20% {
+        color: yellow;
+    }
+    40% {
+        color: lightgreen;
+    }
+    60% {
+        color: blue;
+    }
+    80% {
+        color: violet;
+    }
+    100% {
+        color: red;
+    }
+
+}
+
+.tilt-left {
+    transform: rotate(-30deg);
+}
+
+.tilt-right {
+    transform: rotate(30deg);
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.spin-3d {
+    animation: spin3dChange 3s ease-in-out infinite;
+}
+
+@keyframes spin3dChange {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.pop {
+    animation: popChange 1s steps(5, start) infinite;
+}
+
+@keyframes popChange {
+    to {
+        font-size: 3rem;
+    }
+}
+.spinny {
+    animation: spinnyChange 1s alternate linear infinite;
+}
+
+@keyframes spinnyChange {
+    0% {
+        transform: rotate(0deg) translateX(-40%);
+    }
+    100% {
+        transform: rotate(360deg) translateX(40%);
+    }
+
+}
+
+.pizza-background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url("img/pizza-slice.png") repeat;
+    animation: pizzaScape 20s linear infinite;
+}
+
+@keyframes pizzaScape {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+#prince-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#pizza-prince {
+    position: fixed;
+    bottom: -100%;
+    height: 100%;
+    width: 100%;
+    transition: bottom 4s ease-in-out;
+}
+
+#pizza-prince.active {
+    bottom: 0%;
+    transition-delay: 2s;
+}
+
+#pizza-prince img {
+    height: 100%;
+    width: 100%;
+}
+
+
+#relax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    font-family: cursive;
+    background-color: teal;
+    color: white;
+}
+
+.sun-pulse {
+    animation: sunPulse 4s alternate ease-in-out infinite;
+}
+
+@keyframes sunPulse {
+    to {
+        transform: scale(0.9);
+    }
+}
+
+.vertical-space {
+    height: 150vh;
+}
+
+.cloud-box {
+    position: fixed;
+    z-index: -1;
+    top: 15vh;
+    left: -444px;
+    animation: cloudDrift 30s linear infinite;
+}
+
+.cloud {
+    content: url('img/cloud.png');
+    animation: cloudWobble 3s alternate ease-in-out infinite;
+}
+
+@keyframes cloudDrift {
+    to {
+        transform: translateX(140vw);
+    }
+}
+
+@keyframes cloudWobble {
+    to {
+        transform: skewX(30deg);
+    }
+}
+
+#beach {
+    height: 80vh;
+    margin-top: 6rem;
+}
+
+#jazz {
+    width: 80vw;
+    margin-top: 6rem;
+}
+
+.carpet {
+    width: 100%;
+    height: 20rem;
+    background-image: url('img/pdx-carpet.png');
+    background-repeat: repeat-x;
+}
+
+#relax cite {
+    font-size: medium;
+}
+
+.amogus {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    color: orange;
+}
+
+.amogus2 {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    color: teal;
+}
