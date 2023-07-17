@@ -1,3 +1,5 @@
+/* index.html */
+
 #index {
     display: flex;
     flex-direction: column;
@@ -18,10 +20,6 @@
 
 #index p {
     background-color: white;
-}
-
-#activity {
-    background-image: url("img/under-construction.jpg");
 }
 
 .rainbow-color {
@@ -135,7 +133,7 @@
 
 #pizza-prince.active {
     bottom: 0%;
-    transition-delay: 2s;
+    transition-delay: 2.5s;
 }
 
 #pizza-prince img {
@@ -143,6 +141,14 @@
     width: 100%;
 }
 
+.amogus {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    color: orange;
+}
+
+/* relax.html */
 
 #relax {
     display: flex;
@@ -215,16 +221,65 @@
     font-size: medium;
 }
 
-.amogus {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    color: orange;
-}
-
 .amogus2 {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
     color: teal;
+}
+
+/* activity.html */
+
+#activity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    background: rgb(0, 255, 255);
+    background: radial-gradient(circle, rgb(0, 255, 255) 0%, rgb(255, 255, 0) 100%);
+    color: hotpink;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.side-neon {
+    height: 95vh;
+    width: 10px;
+    border-radius: 5px;
+    background:linear-gradient( to top right, rgb(255, 87, 34) 0%, rgb(251, 140, 0) 100%);
+    box-shadow: 1px 1px 30px rgb(255, 111, 0);
+}
+
+.top-neon {
+    height: 10px;
+    border-radius: 5px;
+    background:linear-gradient( to top right, rgb(255, 87, 34) 0%, rgb(251, 140, 0) 100%);
+    box-shadow: 1px 1px 30px rgb(255, 111, 0);
+}
+.spin-hover {
+    font-size: 14rem;
+    text-shadow: 4px 4px 8px #FF0000, 0 0 16px #0000FF;
+}
+
+.spin-hover:hover {
+    animation: spinText 2s linear infinite;
+}
+
+.highlight-img {
+    height: 40vh;
+    box-shadow: 4px 4px 40px hotpink;
+}
+
+@keyframes spinText {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* menu.html */
+
+#menu {
+    background-image: url("img/under-construction.jpg");
 }
